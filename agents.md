@@ -2,7 +2,7 @@
 
 > This file exists so any AI coding agent (Claude Code, Cursor, Copilot, etc.) working on this project stays within scope. Read this before making any change. If a request conflicts with this file, flag the conflict instead of silently deciding.
 
---- coba test upload
+--- coba test uploadss
 
 ## 1. Project Context
 
