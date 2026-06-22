@@ -1,0 +1,86 @@
+{
+  "Nav": {
+    "work": "作品",
+    "services": "服务",
+    "photography": "摄影",
+    "videography": "视频",
+    "about": "关于",
+    "contact": "联系",
+    "openMenu": "打开菜单",
+    "closeMenu": "关闭菜单"
+  },
+  "Home": {
+    "hero": {
+      "headline": "从严谨的代码<br></br>到完整的<accent>成片。</accent>",
+      "subcopy": "网站开发、设计、摄影与视频制作 —— 由一人从头到尾完成，把每个领域都当作主业来做。",
+      "ctaWork": "查看作品",
+      "ctaContact": "开始合作",
+      "availability": "目前接受少量自由项目",
+      "mediaLabelPhoto": "照片",
+      "mediaLabelVideo": "视频",
+      "scrollCue": "向下滚动"
+    },
+    "marquee": {
+      "web": "网站开发",
+      "design": "设计",
+      "photo": "摄影",
+      "video": "视频制作"
+    },
+    "services": {
+      "eyebrow": "// 我能做什么",
+      "heading": "四个领域，同一个标准。",
+      "viewAll": "全部服务",
+      "web": {
+        "title": "网站开发",
+        "description": "全栈开发 —— 从营销网站到内部管理系统，从交付到长期维护一手包办。"
+      },
+      "design": {
+        "title": "设计",
+        "description": "品牌形象、界面与印刷设计 —— 走出 Figma 依然站得住脚的设计。"
+      },
+      "photo": {
+        "title": "摄影",
+        "description": "人像、产品与活动拍摄 —— 用心构图，而不只是记录。"
+      },
+      "video": {
+        "title": "视频制作",
+        "description": "短片、产品发布与短视频剪辑 —— 真正会被看完的内容。"
+      }
+    },
+    "work": {
+      "eyebrow": "// 精选作品",
+      "heading": "横跨所有领域，同时进行。",
+      "viewAll": "查看全部作品",
+      "items": {
+        "xinyao-platform":       { "title": "Xinyao 科技平台" },
+        "client-brand-identity": { "title": "客户品牌形象" },
+        "wedding-story-vol-3":   { "title": "婚礼故事 第三辑" },
+        "product-launch-reel":   { "title": "产品发布视频" }
+      }
+    },
+    "testimonial": {
+      "quote": "与 RootAnRoo 合作就像拥有一整个工作室，而不只是一位自由职业者 —— 代码交付干净利落，品牌形象也终于名副其实。",
+      "author": "近期客户",
+      "role": "项目负责人（匿名）"
+    },
+    "contactCta": {
+      "eyebrow": "// 一起开始",
+      "heading": "有值得认真对待的项目吗？",
+      "subcopy": "告诉我你在做什么 —— 网站、设计、摄影还是视频 —— 我会如实告诉你我是否合适。",
+      "ctaForm": "发送消息"
+    }
+  },
+  "Categories": {
+    "web_development": "网站开发",
+    "graphic_design": "设计",
+    "photography": "摄影",
+    "videography": "视频制作"
+  },
+  "Status": {
+    "completed": "已完成",
+    "in_progress": "进行中"
+  },
+  "Footer": {
+    "tagline": "代码、设计、摄影与视频 —— 一人完成，同一标准。"
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "Nav": {
+    "work": "Work",
+    "services": "Services",
+    "photography": "Photography",
+    "videography": "Videography",
+    "about": "About",
+    "contact": "Contact",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu"
+  },
+  "Home": {
+    "hero": {
+      "headline": "From clean code<br></br>to the <accent>final cut.</accent>",
+      "subcopy": "Web development, design, photography, and videography — built end-to-end by one person who treats every discipline like the main one.",
+      "ctaWork": "View the work",
+      "ctaContact": "Start a project",
+      "availability": "Open for select freelance projects",
+      "mediaLabelPhoto": "photo",
+      "mediaLabelVideo": "video",
+      "scrollCue": "scroll"
+    },
+    "marquee": {
+      "web": "Web Development",
+      "design": "Design",
+      "photo": "Photography",
+      "video": "Videography"
+    },
+    "services": {
+      "eyebrow": "// what i do",
+      "heading": "Four disciplines, one standard.",
+      "viewAll": "all services",
+      "web": {
+        "title": "Web Development",
+        "description": "Full-stack builds — from a marketing site to an internal system, shipped and maintained end-to-end."
+      },
+      "design": {
+        "title": "Design",
+        "description": "Brand identity, UI, and print — design that holds its shape outside of Figma."
+      },
+      "photo": {
+        "title": "Photography",
+        "description": "Portrait, product, and event coverage — shot with intent, not just documented."
+      },
+      "video": {
+        "title": "Videography",
+        "description": "Reels, product launches, and short-form edits built to actually get watched."
+      }
+    },
+    "work": {
+      "eyebrow": "// selected work",
+      "heading": "Across every discipline, at once.",
+      "viewAll": "view all work",
+      "items": {
+        "xinyao-platform":      { "title": "Xinyao Technology Platform" },
+        "client-brand-identity":{ "title": "Client Brand Identity" },
+        "wedding-story-vol-3":  { "title": "Wedding Story, Vol. 3" },
+        "product-launch-reel":  { "title": "Product Launch Reel" }
+      }
+    },
+    "testimonial": {
+      "quote": "Working with RootAnRoo felt like having a whole studio, not a freelancer — the code shipped clean, and the brand finally looked the way it sounded.",
+      "author": "A recent client",
+      "role": "Project lead, Confidential"
+    },
+    "contactCta": {
+      "eyebrow": "// let's build something",
+      "heading": "Got a project worth doing properly?",
+      "subcopy": "Tell me what you're building — web, design, photo, or video — and I'll tell you honestly if I'm the right fit.",
+      "ctaForm": "Send a message"
+    }
+  },
+  "Categories": {
+    "web_development": "Web Development",
+    "graphic_design": "Design",
+    "photography": "Photography",
+    "videography": "Videography"
+  },
+  "Status": {
+    "completed": "Completed",
+    "in_progress": "In Progress"
+  },
+  "Footer": {
+    "tagline": "Code, design, photo, and video — built by one person, one standard."
+  }
+}

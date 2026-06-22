@@ -1,0 +1,86 @@
+{
+  "Nav": {
+    "work": "Karya",
+    "services": "Layanan",
+    "photography": "Fotografi",
+    "videography": "Videografi",
+    "about": "Tentang",
+    "contact": "Kontak",
+    "openMenu": "Buka menu",
+    "closeMenu": "Tutup menu"
+  },
+  "Home": {
+    "hero": {
+      "headline": "Dari kode yang bersih<br></br>sampai <accent>potongan akhir.</accent>",
+      "subcopy": "Pengembangan web, desain, fotografi, dan videografi — dikerjakan tuntas oleh satu orang yang memperlakukan setiap bidang seolah itu yang utama.",
+      "ctaWork": "Lihat karya",
+      "ctaContact": "Mulai proyek",
+      "availability": "Terbuka untuk proyek freelance terpilih",
+      "mediaLabelPhoto": "foto",
+      "mediaLabelVideo": "video",
+      "scrollCue": "scroll"
+    },
+    "marquee": {
+      "web": "Pengembangan Web",
+      "design": "Desain",
+      "photo": "Fotografi",
+      "video": "Videografi"
+    },
+    "services": {
+      "eyebrow": "// yang saya kerjakan",
+      "heading": "Empat bidang, satu standar.",
+      "viewAll": "semua layanan",
+      "web": {
+        "title": "Pengembangan Web",
+        "description": "Pengembangan full-stack — dari website marketing sampai sistem internal, dikerjakan dan dirawat dari awal sampai akhir."
+      },
+      "design": {
+        "title": "Desain",
+        "description": "Identitas brand, UI, dan cetak — desain yang tetap kuat di luar Figma."
+      },
+      "photo": {
+        "title": "Fotografi",
+        "description": "Potret, produk, dan dokumentasi acara — dipotret dengan niat, bukan sekadar didokumentasikan."
+      },
+      "video": {
+        "title": "Videografi",
+        "description": "Reel, peluncuran produk, dan video pendek yang memang ditonton sampai habis."
+      }
+    },
+    "work": {
+      "eyebrow": "// karya pilihan",
+      "heading": "Lintas semua bidang, sekaligus.",
+      "viewAll": "lihat semua karya",
+      "items": {
+        "xinyao-platform":       { "title": "Platform Xinyao Technology" },
+        "client-brand-identity": { "title": "Identitas Brand Klien" },
+        "wedding-story-vol-3":   { "title": "Wedding Story, Vol. 3" },
+        "product-launch-reel":   { "title": "Video Peluncuran Produk" }
+      }
+    },
+    "testimonial": {
+      "quote": "Kerja sama dengan RootAnRoo rasanya seperti punya satu studio penuh, bukan sekadar freelancer — kodenya rapi, dan brand-nya akhirnya benar-benar terasa sesuai citranya.",
+      "author": "Klien baru-baru ini",
+      "role": "Project lead, Konfidensial"
+    },
+    "contactCta": {
+      "eyebrow": "// mari mulai sesuatu",
+      "heading": "Punya proyek yang layak dikerjakan serius?",
+      "subcopy": "Ceritakan apa yang sedang kamu bangun — web, desain, foto, atau video — dan saya akan jujur apakah saya cocok mengerjakannya.",
+      "ctaForm": "Kirim pesan"
+    }
+  },
+  "Categories": {
+    "web_development": "Pengembangan Web",
+    "graphic_design": "Desain",
+    "photography": "Fotografi",
+    "videography": "Videografi"
+  },
+  "Status": {
+    "completed": "Selesai",
+    "in_progress": "Sedang Berjalan"
+  },
+  "Footer": {
+    "tagline": "Kode, desain, foto, dan video — dikerjakan satu orang, satu standar."
+  }
+}

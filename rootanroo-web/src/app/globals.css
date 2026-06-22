@@ -1,0 +1,171 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:is(.dark *));
+
+/* ============================================================
+   ROOTANROO — DUAL DESIGN SYSTEM
+   Light mode  →  Kurator   (Swiss editorial, Poppins, blue)
+   Dark mode   →  Bingkai   (Cinematic, Cormorant italic, amber)
+   All components read --ra-* tokens; CSS handles the switch.
+   ============================================================ */
+
+:root {
+  /* --- Surfaces --- */
+  --ra-bg:           #F8F7F3;
+  --ra-bg-elevated:  #F0EFE9;
+  --ra-bg-subtle:    #E8E7E1;
+  --ra-line:         #D5D3CB;
+  --ra-line-strong:  #B8B6AF;
+
+  /* --- Ink --- */
+  --ra-ink:          #18181B;
+  --ra-ink-muted:    #6B6B65;
+  --ra-ink-faint:    #AEADA7;
+
+  /* --- Accent (electric blue) --- */
+  --ra-accent:       #0033FF;
+  --ra-accent-soft:  rgba(0, 51, 255, 0.07);
+  --ra-accent-hover: #0029CC;
+
+  /* --- Typography tokens (light = Kurator) --- */
+  --ra-display-font:     var(--font-poppins), system-ui, sans-serif;
+  --ra-display-style:    normal;
+  --ra-display-weight:   700;
+  --ra-display-tracking: -0.04em;
+  --ra-display-lh:       1.06;
+  --ra-display-size:     clamp(2.4rem, 5.5vw, 4.2rem);
+
+  /* --- Font family aliases --- */
+  --font-sans:  var(--font-poppins), "Noto Sans SC", system-ui, sans-serif;
+  --font-mono:  var(--font-space-mono), ui-monospace, "SFMono-Regular", monospace;
+}
+
+/* Dark mode — Bingkai overrides */
+.dark {
+  --ra-bg:           #0D0C0A;
+  --ra-bg-elevated:  #141210;
+  --ra-bg-subtle:    #1C1A16;
+  --ra-line:         #252220;
+  --ra-line-strong:  #3A3830;
+
+  --ra-ink:          #EDE8DE;
+  --ra-ink-muted:    #7A7670;
+  --ra-ink-faint:    #4A4844;
+
+  --ra-accent:       #C4962B;
+  --ra-accent-soft:  rgba(196, 150, 43, 0.10);
+  --ra-accent-hover: #D4A633;
+
+  /* Typography tokens (dark = Bingkai) */
+  --ra-display-font:     var(--font-cormorant), Georgia, "Times New Roman", serif;
+  --ra-display-style:    italic;
+  --ra-display-weight:   600;
+  --ra-display-tracking: -0.01em;
+  --ra-display-lh:       1.04;
+  --ra-display-size:     clamp(2.8rem, 6.5vw, 5rem); /* Cormorant smaller x-height, size up */
+}
+
+/* ============================================================
+   GLOBAL BASE
+   ============================================================ */
+html {
+  scroll-behavior: smooth;
+  background-color: var(--ra-bg);
+  color: var(--ra-ink);
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--ra-bg);
+  color: var(--ra-ink);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+html[lang="zh"] body {
+  font-family: var(--font-cjk), var(--font-sans);
+}
+
+::selection {
+  background-color: var(--ra-accent);
+  color: var(--ra-bg);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ============================================================
+   SHARED UTILITY CLASSES
+   ============================================================ */
+
+/* Display / headline — the CSS-variable-driven type switch */
+.ra-display {
+  font-family: var(--ra-display-font);
+  font-style: var(--ra-display-style);
+  font-weight: var(--ra-display-weight);
+  letter-spacing: var(--ra-display-tracking);
+  line-height: var(--ra-display-lh);
+  font-size: var(--ra-display-size);
+  color: var(--ra-ink);
+}
+
+/* Section headings (smaller, same character) */
+.ra-heading {
+  font-family: var(--ra-display-font);
+  font-style: var(--ra-display-style);
+  font-weight: var(--ra-display-weight);
+  letter-spacing: var(--ra-display-tracking);
+  line-height: 1.1;
+  color: var(--ra-ink);
+}
+
+/* Monospace eyebrow / label */
+.ra-eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+  letter-spacing: 0.04em;
+  color: var(--ra-ink-muted);
+}
+
+/* Small monospace tag */
+.ra-tag {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.04em;
+}
+
+/* Hairline border helper */
+.ra-hairline {
+  border-color: var(--ra-line);
+}
+
+/* Light-mode-only (Kurator editorial accent on subcopy) */
+.ra-pull {
+  border-left: 2px solid var(--ra-accent);
+  padding-left: 1rem;
+}
+.dark .ra-pull {
+  border-left: none;
+  padding-left: 0;
+}
+
+/* Grain overlay for dark mode — subtle texture over the page */
+.ra-grain::after {
+  content: "";
+  display: none;
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 9999;
+  opacity: 0.018;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-size: 256px 256px;
+}
+.dark .ra-grain::after {
+  display: block;
+}
